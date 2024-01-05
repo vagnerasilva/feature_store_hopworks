@@ -97,3 +97,8 @@ Além de perder um tempo valioso na preparação de dados, os projetos e aplicat
 Para ilustrar essa complexidade, o diagrama abaixo descreve a infraestrutura de ML. Isso mostra que os recursos não são padronizados e, portanto, não são muito escaláveis:
 
 Fonte: Artem Oppermann
+
+# 12
+https://github.com/featurestoreorg/featurestore-benchmarks/blob/main/fs-offline-benchmark/README.md
+https://github.com/featurestoreorg/featurestore-benchmarks
+
