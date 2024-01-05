@@ -86,3 +86,14 @@ Duplication of work happens when a data scientist develops a feature that was al
 Training/serving skew happens when the feature generation code in the serving pipeline behaves differently than in the model training pipeline. These differences in code behavior can lead to different feature distributions in the records to score compared to the records that were used to train the model, which ultimately leads to poor model performance in production. 
 
 In some organizations, data scientists write feature generation code to train models in Python and hand it over to engineers that reimplement the code — sometimes in another language like Java or C# — for scoring in production. This reimplementation step is both time consuming and error prone. A small difference in code logic can change model input values and impact the model performance in production.This is another example of duplication of work between the data scientist and engineer, which can also curb the ability to run quick iteration cycles on the models.
+
+# 11
+https://domino.ai/blog/an-introductory-guide-to-feature-stores
+Benefícios de uma Feature Store
+Desenvolver modelos de aprendizado de máquina não é fácil, principalmente porque um sistema de IA é muito complexo e requer um esforço manual significativo. A engenharia e o gerenciamento de dados para ML são algumas das tarefas mais demoradas em projetos de ciência de dados. Os engenheiros de dados precisam preparar uma variedade de fontes de dados e metadados associados para a equipe de ciência de dados. A equipe de ciência de dados determina então o que pode ser útil em um projeto de ML e desenvolve recursos para testar.
+
+Além de perder um tempo valioso na preparação de dados, os projetos e aplicativos de ML são caros e difíceis de escalar. Além de perder um tempo valioso na preparação de dados, os projetos e aplicativos de ML são caros e difíceis de escalar. A criação de recursos não padrão consome tempo, pode causar trabalho repetitivo e inconsistente entre equipes e pode impossibilitar os modelos de entrar em produção porque os dados usados ​​para treinar o modelo não podem ser recriados na produção.
+
+Para ilustrar essa complexidade, o diagrama abaixo descreve a infraestrutura de ML. Isso mostra que os recursos não são padronizados e, portanto, não são muito escaláveis:
+
+Fonte: Artem Oppermann
