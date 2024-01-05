@@ -73,3 +73,16 @@ This article sets out what those circumstances are, and the alternative approach
 https://pub.towardsai.net/unleashing-the-power-of-feature-stores-how-they-can-supercharge-your-mlops-30105fb7d3b8
 Re-usability of features across various applications
 One of the challenges that data science teams often face is duplicated efforts in feature engineering. This occurs when there is no centralized place to manage and fetch features, which results in teams working in silos and reusing features not being straightforward. Additionally, there is an overhead cost associated with using many features. However, using a feature store can help alleviate these challenges by allowing teams to easily share and reuse features across different applications.
+
+# 10
+https://blog.dataiku.com/reuse-at-its-best-the-benefits-of-feature-stores
+Do You Need to Look at Feature Stores for Your Organization?
+There are two main reasons that drive many organizations to look at feature stores:
+
+To limit duplication of work  
+To reduce the risk of training/serving skew 
+Duplication of work happens when a data scientist develops a feature that was already built by another data scientist for a previous project instead of reusing the existing work. In a credit card company, a feature computing the number of transactions on a card in the previous three months can be beneficial to multiple use cases, such as in both a fraud prediction model and in a customer churn model. Without the proper processes and tooling to provide visibility into the existing models and features, it is very hard to avoid this problem. 
+
+Training/serving skew happens when the feature generation code in the serving pipeline behaves differently than in the model training pipeline. These differences in code behavior can lead to different feature distributions in the records to score compared to the records that were used to train the model, which ultimately leads to poor model performance in production. 
+
+In some organizations, data scientists write feature generation code to train models in Python and hand it over to engineers that reimplement the code — sometimes in another language like Java or C# — for scoring in production. This reimplementation step is both time consuming and error prone. A small difference in code logic can change model input values and impact the model performance in production.This is another example of duplication of work between the data scientist and engineer, which can also curb the ability to run quick iteration cycles on the models.
