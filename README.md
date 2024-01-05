@@ -101,4 +101,5 @@ Fonte: Artem Oppermann
 # 12
 https://github.com/featurestoreorg/featurestore-benchmarks/blob/main/fs-offline-benchmark/README.md
 https://github.com/featurestoreorg/featurestore-benchmarks
+https://hannes.muehleisen.org/publications/DBTEST2018-performance-testing.pdf
 
